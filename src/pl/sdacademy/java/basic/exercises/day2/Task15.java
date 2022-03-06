@@ -32,8 +32,7 @@ public class Task15 {
                 if(firstArrElement == null && secondArrElement == null) {
                     continue;
                 }
-                if((firstArrElement != null && (!firstArrElement.equals(secondArrElement)))
-                        || firstArrElement == null) {
+                if(firstArrElement == null || (!firstArrElement.equals(secondArrElement))) {
                     return false;
                 }
             }
