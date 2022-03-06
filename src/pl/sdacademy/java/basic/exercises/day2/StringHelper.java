@@ -2,7 +2,7 @@ package pl.sdacademy.java.basic.exercises.day2;
 
 public class StringHelper {
 
-    static boolean isValid(String input) {
+    public static boolean isValid(String input) {
         // operator trójargumentowy
         // logika (zwracam true albo false) ? operacja_gdy_true : operacja_gdy_false
         //int tmp = input != null ? 0 : 1;
