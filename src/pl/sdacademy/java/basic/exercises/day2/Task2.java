@@ -30,18 +30,10 @@ public class Task2 {
 
     private static boolean isWordContainsPrefix(String input, String prefix) {
 //        if(input != null && !input.isBlank() && prefix != null && !prefix.isBlank()) {
-        if(isValid(input) && isValid(prefix)) {
+        if(StringHelper.isValid(input) && StringHelper.isValid(prefix)) {
             return input.startsWith(prefix);
         }
         return false;
 //        return isValid(input) && isValid(prefix) ? input.startsWith(prefix) : false;
-    }
-
-    private static boolean isValid(String input) {
-        // operator trójargumentowy
-        // logika (zwracam true albo false) ? operacja_gdy_true : operacja_gdy_false
-        //int tmp = input != null ? 0 : 1;
-        //return input != null ? fun1() : fun2();
-        return input != null && !input.isBlank();
     }
 }
