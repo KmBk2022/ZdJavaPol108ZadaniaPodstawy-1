@@ -31,7 +31,7 @@ public class Task7 {
 
     private static float calculate(float firstDigit, float secondDigit, String operator) {
         float result = 0;
-        switch (operator) {
+        switch(operator) {
             case "+":
                 //return firstDigit + secondDigit;
                 result = firstDigit + secondDigit;

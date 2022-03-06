@@ -7,7 +7,7 @@ public class Task8 {
         int rangeTo = 10;
         System.out.printf("Range from %s to %s\n", rangeFrom, rangeTo);
         System.out.println("Prime numbers: ");
-        for (int i = rangeFrom; i <= rangeTo; i++) {
+        for(int i = rangeFrom; i <= rangeTo; i++) {
             if(isPrimeNumber(i)) {
                 System.out.println(i);
             }
@@ -21,8 +21,8 @@ public class Task8 {
         }
 
         //#1 option
-        for(int i = 2; i <= number/2; i++) {
-            if(number%i == 0) {
+        for(int i = 2; i <= number / 2; i++) {
+            if(number % i == 0) {
                 return false;
             }
         }

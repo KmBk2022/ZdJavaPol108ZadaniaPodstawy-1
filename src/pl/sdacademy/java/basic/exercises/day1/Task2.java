@@ -25,12 +25,12 @@ public class Task2 {
         // 2 * pi * R
         // return 2 * 3.14F * diameter/2
         //return 2 * PI * radius;
-        return 2 * (float)Math.PI * radius;
+        return 2 * (float) Math.PI * radius;
     }
 
     private static float calculateAreaOfACircle(float radius) {
         // PI * r^2
         //return PI * radius * radius;
-        return (float)Math.PI * radius * radius;
+        return (float) Math.PI * radius * radius;
     }
 }

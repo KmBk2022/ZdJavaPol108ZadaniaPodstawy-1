@@ -46,7 +46,7 @@ public class Task5 {
         do {
             sum += firstDigit;
             firstDigit++;
-        }while(firstDigit <= secondDigit);
+        } while(firstDigit <= secondDigit);
 
         return sum;
     }
