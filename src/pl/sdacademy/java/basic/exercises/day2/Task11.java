@@ -16,6 +16,7 @@ public class Task11 {
         String afterReverse = new StringBuilder(input).reverse().toString();
         return input.equals(afterReverse);
     }
+
     private static boolean isPalindrome(String input) {
         if(StringHelper.isValid(input)) {
             int forward = 0;

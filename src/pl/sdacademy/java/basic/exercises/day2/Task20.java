@@ -4,7 +4,7 @@ public class Task20 {
 
     public static void main(String[] args) {
         int[] arithmeticProgression = generateArithmeticProgression(5, 3, 3);
-        for (int i = 0; i < arithmeticProgression.length; i++) {
+        for(int i = 0; i < arithmeticProgression.length; i++) {
             System.out.print(arithmeticProgression[i] + " ");
         }
         System.out.println("\nResult: " + ifArithmeticProgressionIsCorrect(arithmeticProgression));
@@ -15,8 +15,8 @@ public class Task20 {
     private static int[] generateArithmeticProgression(int length, int firstElement, int odds) {
         int[] result = new int[length];
         result[0] = firstElement;
-        for(int i = 1; i < length; i ++) {
-            result[i] = result[i-1] + odds;
+        for(int i = 1; i < length; i++) {
+            result[i] = result[i - 1] + odds;
         }
         return result;
     }
@@ -24,8 +24,8 @@ public class Task20 {
     private static boolean ifArithmeticProgressionIsCorrect(int[] array) {
         //#1 Option
         int tmpOdds = array[1] - array[0];
-        for (int j = 2; j < array.length; j++) {
-            if (array[j] - array[j-1] != tmpOdds) {
+        for(int j = 2; j < array.length; j++) {
+            if(array[j] - array[j - 1] != tmpOdds) {
                 return false;
             }
         }

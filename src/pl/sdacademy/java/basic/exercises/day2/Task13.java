@@ -1,7 +1,5 @@
 package pl.sdacademy.java.basic.exercises.day2;
 
-import java.util.Arrays;
-
 public class Task13 {
 
     public static void main(String[] args) {
