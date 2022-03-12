@@ -18,8 +18,14 @@ public class Task6 {
 
         LocalDateTime now = LocalDateTime.now();
 
+        Duration duration = Duration.between(now, nextLesson);
         long days = Duration.between(now, nextLesson).toDays();
         System.out.println("You have " + days + " days to the next lesson");
-        System.out.printf("You have %01d days to the next lesson", days);
+        System.out.printf("You have %01d days to the next lesson\n", days);
+
+        long hours = duration.toHoursPart();
+        long minutes = duration.toMinutesPart();
+        long seconds = duration.toSecondsPart();
+        System.out.printf("You have days: %01d and hours: %01d and minutes: %01d and secs: %01d to the next lesson.", days, hours, minutes, seconds);
     }
 }
