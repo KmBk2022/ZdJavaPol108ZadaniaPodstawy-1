@@ -43,7 +43,8 @@ public class Task1 {
         sda
          */
         Pattern pattern = Pattern.compile(EMAIL_REGEX);
-        Matcher matcher = pattern.matcher(emailAddress);
-        return matcher.matches();
+        return pattern.matcher(emailAddress).matches();
+//        Matcher matcher = pattern.matcher(emailAddress);
+//        return matcher.matches();
     }
 }
